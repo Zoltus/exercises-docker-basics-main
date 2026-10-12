@@ -1,7 +1,6 @@
-FROM ubuntu:22.04
+FROM ubuntu
 
-# Use /usr/src/app as our workdir. The following instructions will be executed in this location.
-WORKDIR /usr/src/app
+WORKDIR /myapp
 
 RUN apt-get update
 RUN apt-get install -y curl
